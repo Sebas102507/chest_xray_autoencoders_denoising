@@ -1,0 +1,23 @@
+version: "3"
+   
+services:
+    django-ml-denoising-backend:
+        build:
+            context: ./ml_backend
+            dockerfile: dockerfile
+        container_name: mlDenoisingBackend
+        command: python manage.py runserver 0.0.0.0:9002
+        ports:
+            - "9002:9002"
+        environment:
+            - DEBUG=1      
+
+    angular-app:
+        build:
+            context: ./web_app
+            dockerfile: dockerfile
+        container_name: denoisingApp
+        ports:
+        - "80:80"        
+
+    

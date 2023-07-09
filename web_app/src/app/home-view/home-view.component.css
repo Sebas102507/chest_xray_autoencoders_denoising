@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #000000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://media.istockphoto.com/id/1296972082/photo/x-ray-image-of-shoulder-joint.jpg?s=170667a&w=0&k=20&c=wdRmAdCSbeuqXrVijmcJSp124qcCSdl4Jf8eQiuvuMU=");
+  background-size: cover;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 60px;
+  font-family: 'Caprasimo', cursive;
+  margin: 0;
+}
+
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: transparent;
+  font-family: 'Inconsolata', monospace;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 12px 24px; /* Adjust the padding to change the button size */
+  border-radius: 4px;
+  border-color: #ffffff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-image: linear-gradient(to right, #832161, #DA4167); /* Replace with your desired gradient colors */
+  border: none;
+}
+
+
+.description {
+  width: 60%;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: 'Inconsolata', monospace;
+}
